@@ -1,121 +1,74 @@
 <!DOCTYPE html>
 <html lang="ms">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BeritaArtis - Laman Hiburan Terkini</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeritaArtis - Sumber Hiburan Terkini</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body class="bg-gray-100 font-sans">
 
-  <!-- NAVIGATION BAR -->
-  <header class="bg-red-600 text-white shadow-md">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold tracking-wide">BeritaArtis</h1>
-      <nav>
-        <ul class="flex space-x-6 text-sm md:text-base">
-          <li><a href="#berita-terkini" class="hover:underline">Berita Terkini</a></li>
-          <li><a href="#biodata-artis" class="hover:underline">Biodata Artis</a></li>
-          <li><a href="#temubual" class="hover:underline">Temubual Eksklusif</a></li>
-          <li><a href="#review" class="hover:underline">Review Muzik & Filem</a></li>
-          <li><a href="#pasukan" class="hover:underline">Pasukan Kami</a></li>
-          <li><a href="#hubungi" class="hover:underline">Hubungi</a></li>
-        </ul>
-      </nav>
+  <!-- Navigasi Utama -->
+  <nav class="bg-red-600 text-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">BeritaArtis</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#berita-terkini" class="hover:underline">Berita Terkini</a></li>
+        <li><a href="#biodata" class="hover:underline">Biodata Artis</a></li>
+        <li><a href="#temubual" class="hover:underline">Temubual Eksklusif</a></li>
+        <li><a href="#review" class="hover:underline">Review Muzik & Filem</a></li>
+        <li><a href="#pasukan" class="hover:underline">Pasukan Kami</a></li>
+        <li><a href="#hubungi" class="hover:underline">Hubungi</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
-  <!-- BERITA TERKINI -->
+  <!-- Berita Terkini -->
   <section id="berita-terkini" class="p-8">
     <h2 class="text-2xl font-bold mb-4">Berita Terkini</h2>
+
+    <!-- Aina Abdul -->
     <article class="bg-white shadow p-4 rounded-lg mb-6">
       <h3 class="text-xl font-semibold">Aina Abdul Menang Artis Wanita Terbaik AJL38</h3>
       <p class="text-sm text-gray-500">Ditulis oleh Akif Amzar | 4 Jun 2025</p>
-      <p class="mt-2">
-        KUALA LUMPUR – Aina Abdul mencipta sejarah apabila dinobatkan sebagai Artis Wanita Terbaik dalam Anugerah Juara Lagu ke-38.
-        Persembahan epiknya menerusi lagu "Kemenangan" mendapat sorakan gemuruh peminat di Axiata Arena dan pujian juri profesional.
-      </p>
+      <p class="mt-2">KUALA LUMPUR – Aina Abdul mencipta sejarah apabila dinobatkan sebagai Artis Wanita Terbaik dalam Anugerah Juara Lagu ke-38. Persembahan epiknya menerusi lagu "Kemenangan" mendapat sorakan gemuruh peminat di Axiata Arena dan pujian juri profesional.</p>
+    </article>
+
+    <!-- Nabila Razali -->
+    <article class="bg-white shadow p-4 rounded-lg mb-6">
+      <h3 class="text-xl font-semibold">Nabila Razali Kembali Dengan Single Baru "Bangkit"</h3>
+      <p class="text-sm text-gray-500">Ditulis oleh Wana Iman | 12 Jun 2025</p>
+      <p class="mt-2">Penyanyi terkenal, Nabila Razali kini tampil dengan lagu baharu berjudul “Bangkit” selepas berehat panjang akibat masalah vokal. Lagu ini mendapat sambutan luar biasa dalam masa 24 jam selepas dilancarkan dan memaparkan sisi vokal yang lebih matang.</p>
+    </article>
+
+    <!-- Hael Husaini -->
+    <article class="bg-white shadow p-4 rounded-lg mb-6">
+      <h3 class="text-xl font-semibold">Hael Husaini Umum Konsert Solo Pertama Di Istana Budaya</h3>
+      <p class="text-sm text-gray-500">Ditulis oleh Akif Amzar | 10 Jun 2025</p>
+      <p class="mt-2">Hael Husaini, penyanyi dan komposer popular, akan mengadakan konsert solo pertamanya di Istana Budaya pada September ini. Konsert bertemakan “Jampi Live” dijangka menampilkan kolaborasi dengan beberapa artis terkemuka.</p>
+    </article>
+
+    <!-- Baby Shima -->
+    <article class="bg-white shadow p-4 rounded-lg mb-6">
+      <h3 class="text-xl font-semibold">Baby Shima Tampil Dengan Lagu Dangdut Moden "Goyang Asia"</h3>
+      <p class="text-sm text-gray-500">Ditulis oleh Wana Iman | 11 Jun 2025</p>
+      <p class="mt-2">Baby Shima kembali dengan single terbaru “Goyang Asia” yang menggabungkan elemen dangdut klasik dan beat moden. Lagu tersebut trending di YouTube dalam masa 48 jam selepas pelancaran rasmi.</p>
+    </article>
+
+    <!-- Siti Nurhaliza -->
+    <article class="bg-white shadow p-4 rounded-lg mb-6">
+      <h3 class="text-xl font-semibold">Siti Nurhaliza Terima Anugerah Ikon Muzik Nusantara</h3>
+      <p class="text-sm text-gray-500">Ditulis oleh Akif Amzar | 9 Jun 2025</p>
+      <p class="mt-2">Datuk Seri Siti Nurhaliza dianugerahkan sebagai Ikon Muzik Nusantara oleh Persatuan Muzik ASEAN atas sumbangannya dalam memperkenalkan lagu-lagu Melayu di pentas antarabangsa sejak dua dekad lalu.</p>
+    </article>
+
+    <!-- Billie Eilish -->
+    <article class="bg-white shadow p-4 rounded-lg mb-6">
+      <h3 class="text-xl font-semibold">Billie Eilish Bakal Adakan Konsert Di Kuala Lumpur 2025</h3>
+      <p class="text-sm text-gray-500">Ditulis oleh Wana Iman | 8 Jun 2025</p>
+      <p class="mt-2">Penyanyi antarabangsa Billie Eilish telah mengesahkan tarikh konsert di Kuala Lumpur sebagai sebahagian daripada tour album terbarunya “Hit Me Hard and Soft”. Tiket konsert habis dijual dalam masa kurang 2 jam selepas dibuka.</p>
     </article>
   </section>
-
-  <!-- BIODATA ARTIS -->
-  <section id="biodata-artis" class="p-8 bg-gray-50">
-    <h2 class="text-2xl font-bold mb-4">Biodata Artis</h2>
-
-    <div class="bg-white shadow p-4 rounded-lg mb-4">
-      <h3 class="text-xl font-semibold">Aina Abdul</h3>
-      <ul class="list-disc ml-6 mt-2">
-        <li>Nama Penuh: Nurul Aina Abdul Ghani</li>
-        <li>Tarikh Lahir: 5 Oktober 1993</li>
-        <li>Asal: Negeri Sembilan</li>
-        <li>Kerjaya: Penyanyi, penulis lagu</li>
-        <li>Lagu Popular: Semalam, Sepi, Kemenangan</li>
-      </ul>
-    </div>
-
-    <div class="bg-white shadow p-4 rounded-lg mb-4">
-      <h3 class="text-xl font-semibold">Nabila Razali</h3>
-      <ul class="list-disc ml-6 mt-2">
-        <li>Nama Penuh: Nur Nabila binti Mohd Razali</li>
-        <li>Tarikh Lahir: 13 November 1992</li>
-        <li>Asal: Selangor</li>
-        <li>Kerjaya: Penyanyi, pelakon</li>
-        <li>Lagu Popular: Pematah Hati, Putus, Peluang Kedua</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- TEMUBUAL EKSKLUSIF -->
-  <section id="temubual" class="p-8">
-    <h2 class="text-2xl font-bold mb-4">Temubual Eksklusif</h2>
-    <div class="bg-white shadow p-4 rounded-lg">
-      <h3 class="text-xl font-semibold">Temu Ramah Bersama Hael Husaini</h3>
-      <p class="mt-2">
-        "Inspirasi lagu-lagu saya datang dari pengalaman hidup sendiri," kata Hael ketika ditemui di studio rakaman terbarunya.
-        Penyanyi yang popular dengan lagu “Jampi” ini juga berkongsi akan melancarkan album baru menjelang hujung tahun ini.
-      </p>
-    </div>
-  </section>
-
-  <!-- REVIEW MUZIK & FILEM -->
-  <section id="review" class="p-8 bg-gray-50">
-    <h2 class="text-2xl font-bold mb-4">Review Muzik & Filem</h2>
-    <div class="bg-white shadow p-4 rounded-lg">
-      <h3 class="text-xl font-semibold">Review: Lagu "Kemenangan" - Aina Abdul</h3>
-      <p class="mt-2">
-        Lagu ini bukan sekadar balada biasa, tetapi simbol kekuatan wanita. Suara lantang Aina disusun kemas dengan melodi emosi
-        menjadikan lagu ini antara karya terbaik tahun ini.
-      </p>
-    </div>
-  </section>
-
-  <!-- PASUKAN KAMI -->
-  <section id="pasukan" class="p-8">
-    <h2 class="text-2xl font-bold mb-4">Pasukan Kami</h2>
-    <div class="grid md:grid-cols-2 gap-4">
-      <div class="bg-white shadow p-4 rounded-lg">
-        <h3 class="text-lg font-semibold">Akif Amzar</h3>
-        <p>Penyunting Kandungan Utama</p>
-      </div>
-      <div class="bg-white shadow p-4 rounded-lg">
-        <h3 class="text-lg font-semibold">Wana Iman</h3>
-        <p>Penulis & Rencana Eksklusif</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- HUBUNGI -->
-  <section id="hubungi" class="p-8 bg-gray-50">
-    <h2 class="text-2xl font-bold mb-4">Hubungi Kami</h2>
-    <p>Email: <a href="mailto:aimanakif812@gmail.com" class="text-blue-600 underline">aimanakif812@gmail.com</a></p>
-    <p>Email 2: <a href="mailto:okakip5@gmail.com" class="text-blue-600 underline">okakip5@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/60166161532" class="text-blue-600 underline">016-6161532</a></p>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-red-700 text-white text-center py-4">
-    © 2025 BeritaArtis. Semua Hak Cipta Terpelihara.
-  </footer>
 
 </body>
 </html>
