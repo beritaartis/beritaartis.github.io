@@ -1,143 +1,66 @@
 <!DOCTYPE html>
 <html lang="ms">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hubungi Kami - Berita Artis</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #fff;
-      color: #222;
-    }
-
-    header {
-      background: #67007c;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      background: #eee;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #67007c;
-    }
-
-    .container {
-      max-width: 700px;
-      margin: 40px auto;
-      background: #fdfdfd;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    h1, h2 {
-      color: #67007c;
-      text-align: center;
-    }
-
-    p, label {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    ul {
-      padding-left: 20px;
-      line-height: 2;
-    }
-
-    form {
-      margin-top: 20px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 16px;
-    }
-
-    button {
-      background: #67007c;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    button:hover {
-      background: #4e005d;
-    }
-
-    footer {
-      background: #f4f4f4;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      margin-top: 50px;
-    }
-
-    a {
-      color: #0066cc;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubungi Kami - BeritaArtis</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigasi Utama -->
+  <nav class="bg-red-600 text-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">BeritaArtis</h1>
+      <ul class="flex space-x-4">
+        <li><a href="index.html" class="hover:underline">Berita Terkini</a></li>
+        <li><a href="biodata.html" class="hover:underline">Biodata Artis</a></li>
+        <li><a href="temubual.html" class="hover:underline">Temubual Eksklusif</a></li>
+        <li><a href="review.html" class="hover:underline">Review Muzik & Filem</a></li>
+        <li><a href="pasukan.html" class="hover:underline">Pasukan Kami</a></li>
+        <li><a href="hubungi.html" class="hover:underline font-bold">Hubungi</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<header>
-  <h1>Hubungi Kami</h1>
-  <p>Berita Artis - Saluran Hiburan Anda</p>
-</header>
+  <!-- Kandungan Hubungi -->
+  <section class="p-8">
+    <h2 class="text-2xl font-bold mb-6">Hubungi BeritaArtis</h2>
 
-<nav>
-  <a href="index.html">Utama</a>
-  <a href="senarai-artis.html">Senarai Artis</a>
-  <a href="hubungi.html">Hubungi</a>
-</nav>
+    <p class="mb-4">Sekiranya anda mempunyai sebarang pertanyaan, cadangan, atau ingin berkongsi berita eksklusif, sila hubungi kami melalui saluran berikut:</p>
 
-<div class="container">
-  <h2>Maklumat Perhubungan</h2>
-  <p>Sebarang pertanyaan, cadangan atau kerjasama media, sila hubungi kami melalui:</p>
+    <div class="bg-white p-6 rounded-lg shadow mb-6">
+      <h3 class="text-lg font-semibold mb-2">Emel Rasmi</h3>
+      <ul class="list-disc list-inside">
+        <li>aimanakif812@gmail.com</li>
+        <li>okakip5@gmail.com</li>
+        <li>wanaiimanaaqashah@gmail.com</li>
+      </ul>
+    </div>
 
-  <ul>
-    <li>📧 Emel: <a href="mailto:aimanakif812@gmail.com">aimanakif812@gmail.com</a></li>
-    <li>📧 Emel: <a href="mailto:okakip5@gmail.com">okakip5@gmail.com</a></li>
-    <li>📧 Emel: <a href="mailto:wanaiimanaaqashah@gmail.com">wanaiimanaaqashah@gmail.com</a></li>
-    <li>📞 Telefon: <a href="tel:0166161532">016-6161532</a></li>
-  </ul>
+    <div class="bg-white p-6 rounded-lg shadow mb-6">
+      <h3 class="text-lg font-semibold mb-2">Nombor Telefon</h3>
+      <p>016-616 1532</p>
+    </div>
 
-  <h2>Borang Hubungi</h2>
-  <form action="mailto:aimanakif812@gmail.com" method="POST" enctype="text/plain">
-    <label for="name">Nama:</label>
-    <input type="text" id="name" name="Nama" required>
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h3 class="text-lg font-semibold mb-2">Borang Hubungi</h3>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Nama</label>
+          <input type="text" class="w-full mt-1 p-2 border border-gray-300 rounded">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Emel</label>
+          <input type="email" class="w-full mt-1 p-2 border border-gray-300 rounded">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Mesej</label>
+          <textarea rows="4" class="w-full mt-1 p-2 border border-gray-300 rounded"></textarea>
+        </div>
+        <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Hantar</button>
+      </form>
+    </div>
 
-    <label for="email">Emel:</label>
-    <input type="email" id="email" name="Emel" required>
-
-    <label for="message">Mesej:</label>
-    <textarea id="message" name="Mesej" rows="5" required></textarea>
-
-    <button type="submit">Hantar Mesej</button>
-  </form>
-</div>
-
-<footer>
-  <p>© 2025 Berita Artis | Dibangunkan oleh Aiman Max & Team</p>
-</footer>
-
+  </section>
 </body>
 </html>
